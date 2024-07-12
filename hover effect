@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hover Effect with jQuery</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+.hover-element { width: 200px; height: 200px;
+background-color: blue; opacity: 1;
+transition: opacity 0.3s ease;
+}
+</style>
+</head>
+<body>
+ 
+
+<div class="hover-element"></div>
+
+
+<script>
+$(document).ready(function() {
+$(".hover-element").hover(function() {
+$(this).css("opacity", "0.5");
+}, function() {
+$(this).css("opacity", "1");
+});
+});
+</script>
+
+
+</body>
+</html>
+
