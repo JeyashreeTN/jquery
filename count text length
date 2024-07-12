@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Text Length Counter</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+
+<textarea id="textInput" rows="4" cols="50"></textarea><br><br>
+<button id="countButton">Count Text Length</button><br><br>
+<div id="result"></div>
+
+
+<script>
+$(document).ready(function() {
+$("#countButton").click(function() {
+var textLength = $("#textInput").val().length;
+$("#result").text("Length of text: " + textLength + " characters");
+});
+});
+</script>
+
+
+</body>
+</html>
